@@ -1,7 +1,12 @@
 <h1>Stupid coaching</h1>
+
 <form action= /answer method="get">
   <input type="text"
     name="question"
     value="<%= params[:question] %>">
   <input type="submit" value="Ask!">
 </form>
+<p>Coach's answer</p>
+<p><%= @answer %></p>
+
+<%= link_to "back", ask_path %>
